@@ -1,0 +1,506 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<title>remidial students</title>
+        
+<center>{% csrf_token %}
+    <br/><br/><br/>
+    {%if c4r%}
+    <table id="tbl_exporttable_to_xls"  border="1">
+        
+        <caption style="text-align:center">4 CSE REMIDIAL STUDENTS</caption>
+        <tr>
+            <th> register number</th>
+            <th>SECTION</th>
+            <th>SUBJECT CODE</th>
+            <th>MARKS</th>
+           
+           
+        </tr>
+        {% for i in c4r %}
+        <tr>
+            <td>{{i.roll_no}}</td>
+            <td>{{i.section}}</td>
+            <td>{{i.sub_code}}</td>
+            <td>{{i.marks}}</td>
+        </tr>
+        {% endfor %}
+    </center>
+    </table><button onclick="ExportToExcel('xlsx')">download</button>
+    {% endif%}
+    <center>{% csrf_token %}
+        {%if c3r%}
+        <table id="tbl_exporttable_to_xls"  border="1">
+            
+            <caption style="text-align:center">3 CSE REMIDIAL STUDENTS</caption>
+            <tr>
+                <th> register number</th>
+                <th>SECTION</th>
+                <th>SUBJECT CODE</th>
+                <th>MARKS</th>
+               
+               
+            </tr>
+            {% for i in c3r %}
+            <tr>
+                <td>{{i.roll_no}}</td>
+                <td>{{i.section}}</td>
+                <td>{{i.sub_code}}</td>
+                <td>{{i.marks}}</td>
+            </tr>
+            {% endfor %}
+        </center>
+        </table><button onclick="ExportToExcel('xlsx')">download</button>
+        {% endif%}
+        <center>{% csrf_token %}
+
+            {%if c2r%}
+            <table id="tbl_exporttable_to_xls"  border="1">
+                
+                <caption style="text-align:center">2 CSE REMIDIAL STUDENTS</caption>
+                <tr>
+                    <th> register number</th>
+                    <th>SECTION</th>
+                    <th>SUBJECT CODE</th>
+                    <th>MARKS</th>
+                   
+                   
+                </tr>
+                {% for i in c2r %}
+                <tr>
+                    <td>{{i.roll_no}}</td>
+                    <td>{{i.section}}</td>
+                    <td>{{i.sub_code}}</td>
+                    <td>{{i.marks}}</td>
+                </tr>
+                {% endfor %}
+            </center>
+            </table><button onclick="ExportToExcel('xlsx')">download</button>
+            {% endif%}
+            <center>{% csrf_token %}
+               
+                {%if c1r%}
+                <table id="tbl_exporttable_to_xls"  border="1">
+                    
+                    <caption style="text-align:center">1 CSE REMIDIAL STUDENTS</caption>
+                    <tr>
+                        <th> register number</th>
+                        <th>SECTION</th>
+                        <th>SUBJECT CODE</th>
+                        <th>MARKS</th>
+                       
+                       
+                    </tr>
+                    {% for i in c1r %}
+                    <tr>
+                        <td>{{i.roll_no}}</td>
+                        <td>{{i.section}}</td>
+                        <td>{{i.sub_code}}</td>
+                        <td>{{i.marks}}</td>
+                    </tr>
+                    {% endfor %}
+                </center>
+                </table><button onclick="ExportToExcel('xlsx')">download</button>
+                {% endif%}
+                <center>{% csrf_token %}
+                   
+                    {%if e4r%}
+                    <table id="tbl_exporttable_to_xls"  border="1">
+                        
+                        <caption style="text-align:center">4 EEE REMIDIAL STUDENTS</caption>
+                        <tr>
+                            <th> register number</th>
+                            <th>SECTION</th>
+                            <th>SUBJECT CODE</th>
+                            <th>MARKS</th>
+                           
+                           
+                        </tr>
+                        {% for i in e4r %}
+                        <tr>
+                            <td>{{i.roll_no}}</td>
+                            <td>{{i.section}}</td>
+                            <td>{{i.sub_code}}</td>
+                            <td>{{i.marks}}</td>
+                        </tr>
+                        {% endfor %}
+                    </center>
+                    </table><button onclick="ExportToExcel('xlsx')">download</button>
+                    {% endif%}
+                    <center>{% csrf_token %}
+                    
+                        {%if e3r%}
+                        <table id="tbl_exporttable_to_xls"  border="1">
+                            
+                            <caption style="text-align:center">3 EEE REMIDIAL STUDENTS</caption>
+                            <tr>
+                                <th> register number</th>
+                                <th>SECTION</th>
+                                <th>SUBJECT CODE</th>
+                                <th>MARKS</th>
+                               
+                               
+                            </tr>
+                            {% for i in e3r %}
+                            <tr>
+                                <td>{{i.roll_no}}</td>
+                                <td>{{i.section}}</td>
+                                <td>{{i.sub_code}}</td>
+                                <td>{{i.marks}}</td>
+                            </tr>
+                            {% endfor %}
+                        </center>
+                        </table><button onclick="ExportToExcel('xlsx')">download</button>
+                        {% endif%}
+                        <center>{% csrf_token %}
+             
+                            {%if e2r%}
+                            <table id="tbl_exporttable_to_xls"  border="1">
+                                
+                                <caption style="text-align:center">2 EEE REMIDIAL STUDENTS</caption>
+                                <tr>
+                                    <th> register number</th>
+                                    <th>SECTION</th>
+                                    <th>SUBJECT CODE</th>
+                                    <th>MARKS</th>
+                                   
+                                   
+                                </tr>
+                                {% for i in e2r %}
+                                <tr>
+                                    <td>{{i.roll_no}}</td>
+                                    <td>{{i.section}}</td>
+                                    <td>{{i.sub_code}}</td>
+                                    <td>{{i.marks}}</td>
+                                </tr>
+                                {% endfor %}
+                            </center>
+                            </table><button onclick="ExportToExcel('xlsx')">download</button>
+                            {% endif%}
+                            <center>{% csrf_token %}
+          
+                                {%if e1r%}
+                                <table id="tbl_exporttable_to_xls"  border="1">
+                                    
+                                    <caption style="text-align:center">1 EEE REMIDIAL STUDENTS</caption>
+                                    <tr>
+                                        <th> register number</th>
+                                        <th>SECTION</th>
+                                        <th>SUBJECT CODE</th>
+                                        <th>MARKS</th>
+                                       
+                                       
+                                    </tr>
+                                    {% for i in e1r %}
+                                    <tr>
+                                        <td>{{i.roll_no}}</td>
+                                        <td>{{i.section}}</td>
+                                        <td>{{i.sub_code}}</td>
+                                        <td>{{i.marks}}</td>
+                                    </tr>
+                                    {% endfor %}
+                                </center>
+                                </table><button onclick="ExportToExcel('xlsx')">download</button>
+                                {% endif%}
+                                <center>{% csrf_token %}
+
+                                    {%if i4r%}
+                                    <table id="tbl_exporttable_to_xls"  border="1">
+                                        
+                                        <caption style="text-align:center">4 IT REMIDIAL STUDENTS</caption>
+                                        <tr>
+                                            <th> register number</th>
+                                            <th>SECTION</th>
+                                            <th>SUBJECT CODE</th>
+                                            <th>MARKS</th>
+                                           
+                                           
+                                        </tr>
+                                        {% for i in i4r %}
+                                        <tr>
+                                            <td>{{i.roll_no}}</td>
+                                            <td>{{i.section}}</td>
+                                            <td>{{i.sub_code}}</td>
+                                            <td>{{i.marks}}</td>
+                                        </tr>
+                                        {% endfor %}
+                                    </center>
+                                    </table><button onclick="ExportToExcel('xlsx')">download</button>
+                                    {% endif%}
+                                    <center>{% csrf_token %}
+          
+                                        {%if i3r%}
+                                        <table id="tbl_exporttable_to_xls"  border="1">
+                                            
+                                            <caption style="text-align:center">3 IT REMIDIAL STUDENTS</caption>
+                                            <tr>
+                                                <th> register number</th>
+                                                <th>SECTION</th>
+                                                <th>SUBJECT CODE</th>
+                                                <th>MARKS</th>
+                                               
+                                               
+                                            </tr>
+                                            {% for i in i3r %}
+                                            <tr>
+                                                <td>{{i.roll_no}}</td>
+                                                <td>{{i.section}}</td>
+                                                <td>{{i.sub_code}}</td>
+                                                <td>{{i.marks}}</td>
+                                            </tr>
+                                            {% endfor %}
+                                        </center>
+                                        </table><button onclick="ExportToExcel('xlsx')">download</button>
+                                        {% endif%}<center>{% csrf_token %}
+   
+                                            {%if i2r%}
+                                            <table id="tbl_exporttable_to_xls"  border="1">
+                                                
+                                                <caption style="text-align:center">2 IT REMIDIAL STUDENTS</caption>
+                                                <tr>
+                                                    <th> register number</th>
+                                                    <th>SECTION</th>
+                                                    <th>SUBJECT CODE</th>
+                                                    <th>MARKS</th>
+                                                   
+                                                   
+                                                </tr>
+                                                {% for i in i2r %}
+                                                <tr>
+                                                    <td>{{i.roll_no}}</td>
+                                                    <td>{{i.section}}</td>
+                                                    <td>{{i.sub_code}}</td>
+                                                    <td>{{i.marks}}</td>
+                                                </tr>
+                                                {% endfor %}
+                                            </center>
+                                            </table><button onclick="ExportToExcel('xlsx')">download</button>
+                                            {%endif%}
+                                            <center>{% csrf_token %}
+
+                                                {%if i1r%}
+                                                <table id="tbl_exporttable_to_xls"  border="1">
+                                                    
+                                                    <caption style="text-align:center">1 IT REMIDIAL STUDENTS</caption>
+                                                    <tr>
+                                                        <th> register number</th>
+                                                        <th>SECTION</th>
+                                                        <th>SUBJECT CODE</th>
+                                                        <th>MARKS</th>
+                                                       
+                                                       
+                                                    </tr>
+                                                    {% for i in i1r %}
+                                                    <tr>
+                                                        <td>{{i.roll_no}}</td>
+                                                        <td>{{i.section}}</td>
+                                                        <td>{{i.sub_code}}</td>
+                                                        <td>{{i.marks}}</td>
+                                                    </tr>
+                                                    {% endfor %}
+                                                </center>
+                                                </table><button onclick="ExportToExcel('xlsx')">download</button>
+                                                {% endif%}
+                                                <center>{% csrf_token %}
+                              
+                                                    {%if cs4r%}
+                                                    <table id="tbl_exporttable_to_xls"  id="tbl_exporttable_to_xls"  border="1">
+                                                        
+                                                        <caption style="text-align:center">4 CSM REMIDIAL STUDENTS</caption>
+                                                        <tr>
+                                                            <th> register number</th>
+                                                            <th>SECTION</th>
+                                                            <th>SUBJECT CODE</th>
+                                                            <th>MARKS</th>
+                                                           
+                                                           
+                                                        </tr>
+                                                        {% for i in cs4r %}
+                                                        <tr>
+                                                            <td>{{i.roll_no}}</td>
+                                                            <td>{{i.section}}</td>
+                                                            <td>{{i.sub_code}}</td>
+                                                            <td>{{i.marks}}</td>
+                                                        </tr>
+                                                        {% endfor %}
+                                                    </center>
+                                                    </table><button onclick="ExportToExcel('xlsx')">download</button>
+                                                    {% endif%}
+                                                    <center>{% csrf_token %}
+                                          
+                                                        {%if cs3r%}
+                                                        <table id="tbl_exporttable_to_xls"  border="1">
+                                                            
+                                                            <caption style="text-align:center">3 CSM REMIDIAL STUDENTS</caption>
+                                                            <tr>
+                                                                <th> register number</th>
+                                                                <th>SECTION</th>
+                                                                <th>SUBJECT CODE</th>
+                                                                <th>MARKS</th>
+                                                               
+                                                               
+                                                            </tr>
+                                                            {% for i in cs3r %}
+                                                            <tr>
+                                                                <td>{{i.roll_no}}</td>
+                                                                <td>{{i.section}}</td>
+                                                                <td>{{i.sub_code}}</td>
+                                                                <td>{{i.marks}}</td>
+                                                            </tr>
+                                                            {% endfor %}
+                                                        </center>
+                                                        </table><button onclick="ExportToExcel('xlsx')">download</button>
+                                                        {% endif%}
+                                                        <center>{% csrf_token %}
+  
+                                                            {%if cs2r%}
+                                                            <table id="tbl_exporttable_to_xls"  border="1">
+                                                                
+                                                                <caption style="text-align:center">2 CSM REMIDIAL STUDENTS</caption>
+                                                                <tr>
+                                                                    <th> register number</th>
+                                                                    <th>SECTION</th>
+                                                                    <th>SUBJECT CODE</th>
+                                                                    <th>MARKS</th>
+                                                                   
+                                                                   
+                                                                </tr>
+                                                                {% for i in cs2r %}
+                                                                <tr>
+                                                                    <td>{{i.roll_no}}</td>
+                                                                    <td>{{i.section}}</td>
+                                                                    <td>{{i.sub_code}}</td>
+                                                                    <td>{{i.marks}}</td>
+                                                                </tr>
+                                                                {% endfor %}
+                                                            </center>
+                                                            </table><button onclick="ExportToExcel('xlsx')">download</button>
+                                                            {% endif%}
+                                                            <center>{% csrf_token %}
+                                                      
+                                                                {%if cs1r%}
+                                                                <table id="tbl_exporttable_to_xls"  border="1">
+                                                                    
+                                                                    <caption style="text-align:center">1 CSM REMIDIAL STUDENTS</caption>
+                                                                    <tr>
+                                                                        <th> register number</th>
+                                                                        <th>SECTION</th>
+                                                                        <th>SUBJECT CODE</th>
+                                                                        <th>MARKS</th>
+                                                                       
+                                                                       
+                                                                    </tr>
+                                                                    {% for i in cs1r %}
+                                                                    <tr>
+                                                                        <td>{{i.roll_no}}</td>
+                                                                        <td>{{i.section}}</td>
+                                                                        <td>{{i.sub_code}}</td>
+                                                                        <td>{{i.marks}}</td>
+                                                                    </tr>
+                                                                    {% endfor %}
+                                                                </center>
+                                                                </table><button onclick="ExportToExcel('xlsx')">download</button>
+                                                                {% endif%}
+                                                                <center>{% csrf_token %}
+                                                      
+                                                                    {%if ec1r%}
+                                                                    <table id="tbl_exporttable_to_xls"  border="1">
+                                                                        
+                                                                        <caption style="text-align:center">1 ECE REMIDIAL STUDENTS</caption>
+                                                                        <tr>
+                                                                            <th> register number</th>
+                                                                            <th>SECTION</th>
+                                                                            <th>SUBJECT CODE</th>
+                                                                            <th>MARKS</th>
+                                                                           
+                                                                           
+                                                                        </tr>
+                                                                        {% for i in ec1r %}
+                                                                        <tr>
+                                                                            <td>{{i.roll_no}}</td>
+                                                                            <td>{{i.section}}</td>
+                                                                            <td>{{i.sub_code}}</td>
+                                                                            <td>{{i.marks}}</td>
+                                                                        </tr>
+                                                                        {% endfor %}
+                                                                    </center>
+                                                                    </table><button onclick="ExportToExcel('xlsx')">download</button>
+                                                                    {% endif%}
+                                                                    <center>{% csrf_token %}
+                                                      
+                                                                        {%if ec2r%}
+                                                                        <table id="tbl_exporttable_to_xls"  border="1">
+                                                                            
+                                                                            <caption style="text-align:center">2 ECE REMIDIAL STUDENTS</caption>
+                                                                            <tr>
+                                                                                <th> register number</th>
+                                                                                <th>SECTION</th>
+                                                                                <th>SUBJECT CODE</th>
+                                                                                <th>MARKS</th>
+                                                                               
+                                                                               
+                                                                            </tr>
+                                                                            {% for i in ec2r %}
+                                                                            <tr>
+                                                                                <td>{{i.roll_no}}</td>
+                                                                                <td>{{i.section}}</td>
+                                                                                <td>{{i.sub_code}}</td>
+                                                                                <td>{{i.marks}}</td>
+                                                                            </tr>
+                                                                            {% endfor %}
+                                                                        </center>
+                                                                        </table><button onclick="ExportToExcel('xlsx')">download</button>
+                                                                        {% endif%}
+                                                                        <center>{% csrf_token %}
+                                                      
+                                                                            {%if ec3r%}
+                                                                            <table id="tbl_exporttable_to_xls"  border="1">
+                                                                                
+                                                                                <caption style="text-align:center">3 ECE REMIDIAL STUDENTS</caption>
+                                                                                <tr>
+                                                                                    <th> register number</th>
+                                                                                    <th>SECTION</th>
+                                                                                    <th>SUBJECT CODE</th>
+                                                                                    <th>MARKS</th>
+                                                                                   
+                                                                                   
+                                                                                </tr>
+                                                                                {% for i in ec3r %}
+                                                                                <tr>
+                                                                                    <td>{{i.roll_no}}</td>
+                                                                                    <td>{{i.section}}</td>
+                                                                                    <td>{{i.sub_code}}</td>
+                                                                                    <td>{{i.marks}}</td>
+                                                                                </tr>
+                                                                                {% endfor %}
+                                                                            </center>
+                                                                            </table><button onclick="ExportToExcel('xlsx')">download</button>
+                                                                            {% endif%}
+                                                                            <center>{% csrf_token %}
+                                                      
+                                                                                {%if ec4r%}
+                                                                                <table id="tbl_exporttable_to_xls"  border="1">
+                                                                                    
+                                                                                    <caption style="text-align:center">4 ECE REMIDIAL STUDENTS</caption>
+                                                                                    <tr>
+                                                                                        <th> register number</th>
+                                                                                        <th>SECTION</th>
+                                                                                        <th>SUBJECT CODE</th>
+                                                                                        <th>MARKS</th>
+                                                                                       
+                                                                                       
+                                                                                    </tr>
+                                                                                    {% for i in ec4r %}
+                                                                                    <tr>
+                                                                                        <td>{{i.roll_no}}</td>
+                                                                                        <td>{{i.section}}</td>
+                                                                                        <td>{{i.sub_code}}</td>
+                                                                                        <td>{{i.marks}}</td>
+                                                                                    </tr>
+                                                                                    {% endfor %}
+                                                                                </center>
+                                                                            <br>
+                                                                                </table><button onclick="ExportToExcel('xlsx')">download</button>
+
+                                                                                {% endif%}
+                                                                {%endblock%}
